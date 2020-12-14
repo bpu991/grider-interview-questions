@@ -7,5 +7,5 @@
 //   reverse('Greetings!') === '!sgniteerG'
 
 function reverse(str) {}
-
+console.log('hi')
 module.exports = reverse;

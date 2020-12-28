@@ -17,6 +17,28 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+//Clarifying Questions:
+    // - Function will only recieve positive integers?
+    // - will it start with 1 # sign or will it start with 0?
 
+//Approaches:
+    // write a for loop that goes up to the input number
+    // for every index in the loop, 
+function steps(n) {
+    
+    for (let row = 0; row < n; row++) {
+        let stair = ''
+        for (let col = 0; col < n; col++) {
+            if (col <= row) {
+                stair += '#';
+            } else {
+                stair += ' ';
+            }
+        }
+        console.log(stair)
+    }
+    
+}
+
+console.log(steps(3))
 module.exports = steps;

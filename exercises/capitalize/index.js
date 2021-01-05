@@ -27,11 +27,18 @@
     // at each index of the array, capitalize first element
     // .join the array into a new string
 function capitalize(str) {
+    // use .split(' ') to split the string into an array at each space
     let array = str.split(' ');
     let newSentence = [];
+
+    // use a for loop to loop through each element of the array
     for (let i = 0; i < array.length; i++) {
+
+        // at each index of the array, capitalize first element
         newSentence.push(array[i][0].toUpperCase() + array[i].slice(1));
     }
+    
+    // .join the array into a new string
     return newSentence.join(' ')
 }
 
